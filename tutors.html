@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Recommendations</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h1>Tutor Recommendations</h1>
+        <p>Enter your age to find the best tutor recommendations for you:</p>
+
+        <!-- Age Input -->
+        <div id="age-input-container">
+            <input type="number" id="user-age" placeholder="Enter your age" min="10" max="100">
+            <button id="age-filter-btn">Find Tutors</button>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div id="filter-container">
+            <h3>Filter by Mode</h3>
+            <button class="filter-btn" data-criteria="remote">Remote</button>
+            <button class="filter-btn" data-criteria="in-person">In-Person</button>
+
+            <h3>Filter by Location</h3>
+            <button class="filter-btn" data-criteria="New York">New York</button>
+            <button class="filter-btn" data-criteria="San Francisco">San Francisco</button>
+            <button class="filter-btn" data-criteria="Los Angeles">Los Angeles</button>
+        </div>
+
+        <!-- Tutor List -->
+        <ul id="tutor-list">
+            <!-- List of tutors will go here -->
+        </ul>
+
+        <a href="index.html">Back to Calculator</a>
+    </div>
+    <script src="tutors.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
