@@ -1,4 +1,9 @@
 // tests/tutors.test.js
+// tests/tutors.test.js
+test('Basic addition test', () => {
+    expect(1 + 1).toBe(2);
+});
+
 
 const tutors = [
     { name: 'John Doe', ageRange: '10-15', subject: 'Mathematics' },
